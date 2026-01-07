@@ -29,13 +29,19 @@ const initEvent = init({
 const embed = new LiveboardEmbed("#your-own-div", {
     frameParams: {},
     /*param-start-liveboardId*/
-     liveboardId: "c6d0a37b-c630-495e-8a0f-cef3a06d13de",
+     liveboardId: "2b3c3696-030f-41be-8d83-f24b3da765a2",
 /*param-end-liveboardId*/
 /*param-start-activeTabId*//*param-end-activeTabId*/
 /*param-start-liveboardFullHeight*//*param-end-liveboardFullHeight*/
 /*param-start-customizeLiveboardHeader*//*param-end-customizeLiveboardHeader*/
 /*param-start-hideLiveboardHeader*//*param-end-hideLiveboardHeader*/
-/*param-start-runtimeFiltersAndParameters*//*param-end-runtimeFiltersAndParameters*/
+/*param-start-runtimeFiltersAndParameters*/
+    runtimeFilters: [{
+      columnName: "Area Market",
+      operator: RuntimeFilterOp.EQ,
+      values: ["ATL"]               
+    }],
+/*param-end-runtimeFiltersAndParameters*/
 /*param-start-modifyActions*//*param-end-modifyActions*/
 /*param-start-exposeTranslationIds*//*param-end-exposeTranslationIds*/
 /*param-start-codeBasedCustomActions*//*param-end-codeBasedCustomActions*/

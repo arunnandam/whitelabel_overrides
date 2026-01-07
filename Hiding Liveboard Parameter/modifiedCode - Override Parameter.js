@@ -34,7 +34,6 @@ const embed = new LiveboardEmbed("#your-own-div", {
 /*param-start-activeTabId*//*param-end-activeTabId*/
 /*param-start-liveboardFullHeight*//*param-end-liveboardFullHeight*/
 /*param-start-customizeLiveboardHeader*//*param-end-customizeLiveboardHeader*/
-
 /*param-start-hideLiveboardHeader*//*param-end-hideLiveboardHeader*/
 /*param-start-runtimeFiltersAndParameters*/
      runtimeParameters:[{
@@ -42,7 +41,6 @@ const embed = new LiveboardEmbed("#your-own-div", {
         value: 'Toyota'
     }],
 /*param-end-runtimeFiltersAndParameters*/
-
 /*param-start-modifyActions*//*param-end-modifyActions*/
 /*param-start-exposeTranslationIds*//*param-end-exposeTranslationIds*/
 /*param-start-codeBasedCustomActions*//*param-end-codeBasedCustomActions*/

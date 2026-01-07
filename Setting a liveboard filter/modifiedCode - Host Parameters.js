@@ -29,7 +29,7 @@ const initEvent = init({
 const embed = new LiveboardEmbed("#your-own-div", {
     frameParams: {},
     /*param-start-liveboardId*/
-     liveboardId: "c6d0a37b-c630-495e-8a0f-cef3a06d13de",
+     liveboardId: "2b3c3696-030f-41be-8d83-f24b3da765a2",
 /*param-end-liveboardId*/
 /*param-start-activeTabId*//*param-end-activeTabId*/
 /*param-start-liveboardFullHeight*//*param-end-liveboardFullHeight*/
@@ -47,7 +47,18 @@ showErrorBanner('none');
 embed
     // Register event listeners
     .on(EmbedEvent.Init, showLoader)
-    .on(EmbedEvent.LiveboardRendered, hideLoader)
+    .on(EmbedEvent.LiveboardRendered, () => {
+  hideLoader();
+
+  embed.trigger(HostEvent.UpdateRuntimeFilters, [
+    {
+      columnName: "Area Market",
+      operator: RuntimeFilterOp.EQ,
+      values: ["ATL"]               
+    }
+  ]);
+})
+
     /*param-start-customActionHandle*//*param-end-customActionHandle*/
 /*param-start-codeBasedCustomActionsHandle*//*param-end-codeBasedCustomActionsHandle*/
     .on(EmbedEvent.Error, (error) => {

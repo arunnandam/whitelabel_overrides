@@ -1,1 +1,2 @@
-This is an example of OEM Analytics dashboard where I hidden the parameter by hiding the value.
+There were two methods in hiding the liveboard parameter. One is by running the Host Parameter and other by runtime Parameters.
+

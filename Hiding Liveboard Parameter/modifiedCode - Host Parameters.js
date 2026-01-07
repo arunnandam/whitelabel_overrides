@@ -29,7 +29,7 @@ const initEvent = init({
 const embed = new LiveboardEmbed("#your-own-div", {
     frameParams: {},
     /*param-start-liveboardId*/
-     liveboardId: "c6d0a37b-c630-495e-8a0f-cef3a06d13de",
+     liveboardId: "7ed638dd-054b-4fa6-9103-18fb6e923933",
 /*param-end-liveboardId*/
 /*param-start-activeTabId*//*param-end-activeTabId*/
 /*param-start-liveboardFullHeight*//*param-end-liveboardFullHeight*/
@@ -47,7 +47,17 @@ showErrorBanner('none');
 embed
     // Register event listeners
     .on(EmbedEvent.Init, showLoader)
-    .on(EmbedEvent.LiveboardRendered, hideLoader)
+    .on(EmbedEvent.LiveboardRendered, () => {
+  hideLoader();
+
+  embed.trigger(HostEvent.UpdateParameters, [
+    {
+      name: "oem",
+      value: "infiniti",
+      isVisibleToUser: true
+    }
+  ]);
+})
     /*param-start-customActionHandle*//*param-end-customActionHandle*/
 /*param-start-codeBasedCustomActionsHandle*//*param-end-codeBasedCustomActionsHandle*/
     .on(EmbedEvent.Error, (error) => {

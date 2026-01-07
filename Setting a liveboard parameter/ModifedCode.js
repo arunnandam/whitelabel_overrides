@@ -35,7 +35,12 @@ const embed = new LiveboardEmbed("#your-own-div", {
 /*param-start-liveboardFullHeight*//*param-end-liveboardFullHeight*/
 /*param-start-customizeLiveboardHeader*//*param-end-customizeLiveboardHeader*/
 /*param-start-hideLiveboardHeader*//*param-end-hideLiveboardHeader*/
-/*param-start-runtimeFiltersAndParameters*//*param-end-runtimeFiltersAndParameters*/
+/*param-start-runtimeFiltersAndParameters*/
+     runtimeParameters:[{
+        name: 'oem', 
+        value: 'Toyota'
+    }],
+/*param-end-runtimeFiltersAndParameters*/
 /*param-start-modifyActions*//*param-end-modifyActions*/
 /*param-start-exposeTranslationIds*//*param-end-exposeTranslationIds*/
 /*param-start-codeBasedCustomActions*//*param-end-codeBasedCustomActions*/
