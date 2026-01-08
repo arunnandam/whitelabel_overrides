@@ -53,7 +53,7 @@ embed
   embed.trigger(HostEvent.UpdateParameters, [
     {
       name: "oem",
-      value: "infiniti",
+      value: "infiniti", //optinal but throwing error
       isVisibleToUser: true
     }
   ]);
