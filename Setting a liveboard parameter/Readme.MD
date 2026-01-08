@@ -1,1 +1,11 @@
-This is an example of `OEM Analytics dashboard` where I hidden the parameter by overriding the value with `Toyota`.
+Runtime Parameters:
+
+This is similar to hiding a liveboard parameter where it set and hide the chips at the same time.
+
+Example:
+```
+     runtimeParameters:[{
+        name: 'oem', 
+        value: 'Toyota'
+    }]
+```
